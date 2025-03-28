@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+}
+nav{
+    background-color: rgb(36, 119, 146);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    align-items: center;
+    }
+nav li{
+display: inline-block;
+list-style: none;
+padding: 10px ;
+}
+
+.logo{
+font-size: 30px;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+a{
+    color: white;
+ text-decoration: none;
+}
+.navlink{
+    font-size: 15px;
+    font-weight: bold;
+}
+.navlink a:hover{
+    cursor: pointer;
+    color: darkblue;
+}
+.menu-icon{
+font-size: 30px;
+font-weight: bold;
+display: none;
+}
+
+@media all and (max-width: 640px){
+.menu-icon{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+.logo{
+    align-self: flex-start;
+}
+nav {
+    flex-direction: column;
+}
+nav li{
+    display: block;
+    font-size: 18px;
+  
+}
+
+.navlink {
+    display: none; /* Initially hide the menu */
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+   
+}
+.navlink.show{
+    display: block;
+}
+}
+
